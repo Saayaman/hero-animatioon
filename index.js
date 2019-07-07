@@ -1,3 +1,7 @@
 exports.printMsg = function() {
-  console.log('Hi the package works!');
+  console.log('npm');
+}
+
+exports.isEmailValid = (email) => {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
