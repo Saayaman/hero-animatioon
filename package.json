@@ -1,11 +1,30 @@
 {
   "name": "hero-animation",
-  "version": "1.0.0",
+  "version": "1.0.10",
   "description": "An easy animation package",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saayaman/hero-animation"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "react-scripts start",
+    "build": "rimraf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__"
   },
   "author": "Ayako Sayama <ayakosayama1987@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react": "^6.24.1",
+    "react": "^16.8.6",
+    "react-do": "^1.1.6",
+    "react-scripts": "^3.0.1",
+    "rimraf": "^2.6.3"
+  }
 }
