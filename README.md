@@ -7,3 +7,4 @@ This is a simple animation component.
 
 
 ### `npm start`
+# hero-animatioon
