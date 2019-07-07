@@ -1,0 +1,35 @@
+.AnimatedLink {
+  display: inline-block;
+  color: white;
+  font-weight: 600;
+}
+
+.AnimatedLink::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color:white;
+  margin-top: 5px;
+}
+
+.AnimatedLink:hover::after {
+  animation: menuLink 0.7s ease-out;
+}
+
+@keyframes menuLink {
+  50% {
+    margin-left: 100%;
+    width: 0;
+  }
+
+  70% {
+    display: none;
+    margin-left: 0;
+    width:0;
+  }
+
+  100% {
+    width: 100%;;
+  }
+}

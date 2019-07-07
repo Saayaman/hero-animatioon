@@ -1,11 +1,41 @@
 {
   "name": "hero-animation",
-  "version": "1.0.0",
-  "description": "An easy animation package",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "version": "1.0.9",
+  "description": "Put a description here",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "react": "^15.5.4"
   },
-  "author": "Ayako Sayama <ayakosayama1987@gmail.com>",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Saayaman/hero-animatioon.git"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2"
+  },
+  "scripts": {
+    "start": "webpack && open index.html",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "author": {
+    "name": "Ayako Sayama",
+    "email": "ayakosayama1987@gmail.com"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.0",
+    "@babel/preset-env": "^7.5.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.0.0",
+    "react": "^15.5.4",
+    "rimraf": "^2.6.3",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5"
+  }
 }
