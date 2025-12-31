@@ -24,7 +24,7 @@
     "babel-preset-react": "^6.24.1",
     "react": "^16.8.6",
     "react-do": "^1.1.6",
-    "react-scripts": "^3.0.1",
+    "react-scripts": "^5.0.1",
     "rimraf": "^2.6.3"
   }
 }
